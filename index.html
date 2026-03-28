@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <h2 class="logo">Portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- LANDING -->
+<section id="home" class="home">
+    <img src="your-photo.jpg" class="profile">
+    <h1 class="name">Grason Stevie</h1>
+    <div class="line"></div>
+    <p>Mechanical Engineering Student | Biomechanics & Surgical Robotics</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Mechanical Engineering student passionate about biomechanics 
+        and surgical robotics. I aim to integrate engineering principles 
+        with medical science to develop advanced healthcare solutions.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="card" onclick="openPopup('edu1')">
+        <img src="college-logo.png">
+        <h3>University College of Engineering</h3>
+        <p>2025 - 2029</p>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card" onclick="openPopup('cert1')">
+        <img src="cert-logo.png">
+        <h3>Python for Beginners</h3>
+        <p>Issued: 2026</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card" onclick="openPopup('proj1')">
+        <h3>Biomechanical Arm Model</h3>
+        <p>2026</p>
+    </div>
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-data"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
